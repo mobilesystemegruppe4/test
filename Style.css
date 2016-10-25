@@ -1,0 +1,93 @@
+/* =Navigation
+-------------------------------------------------------------- */
+/* clip skip link for screen readers */
+.skip-link {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+#access {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow:visible;
+    z-index:100;
+}
+/* style the main menu 8*/
+.sf-menu{
+    border: 1px solid #000;
+    border-top: none;
+}
+/* get rid of padding and margin off all ul's (not sure about using * here, could be better) */
+.sf-menu, .sf-menu * {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/* position all dropdowns off screen */
+.sf-menu ul {
+    position:absolute;
+    top:-999em;
+}
+/* style the main nav list items */
+.sf-menu li {
+    background: #000;
+    background-repeat: repeat-x;
+    border-top: 1px solid #242324;
+    clear: left;
+    float:left;
+    position:relative;
+    width: 100%;
+}
+/* change the main nav list items on hover */
+.sf-menu li:hover {
+    visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+/* style all the links */
+.sf-menu a {
+    font-size: .8em;
+    color: #fff;
+    display:block;
+    padding: 12px 0;
+    text-decoration: none;
+    text-indent: 12px;
+}
+/* style the first drop */
+.sf-menu li li, .sf-menu li li:hover{
+    background: none;
+    background-image: none;
+}
+/* add a larger text indent for the first drop links */
+.sf-menu li li a{
+    text-indent: 24px;
+}
+/* add a larger text indent for the second drop links */
+.sf-menu li li li a{
+    text-indent: 36px;
+}
+/* add a larger text indent for the third drop links */
+.sf-menu li li li li a{
+    text-indent: 48px;
+}
+/* position first drop */
+.sf-menu li:hover ul {
+    top:auto; /* match top ul list item height */
+    position:relative;
+}
+/* make sure second drop is still off screen */
+ul.sf-menu li:hover li ul {
+    position: absolute;
+    top:-999em;
+}
+/* position second drop */
+ul.sf-menu li li:hover ul {
+    top:auto;
+    position:relative;
+}
+/* make sure third drop is still off screen */
+ul.sf-menu li li:hover li ul {
+    position: absolute;
+    top:-999em;
+}
+/* position third drop */
+ul.sf-menu li li li:hover ul {
+    top:auto;
+    position:relative;
+}
