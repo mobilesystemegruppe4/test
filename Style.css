@@ -5,11 +5,13 @@
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute !important;
 }
+
 #access {
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow:visible;
     z-index:100;
 }
+
 /* style the main menu 8*/
 .sf-menu{
     border: 1px solid #000;
