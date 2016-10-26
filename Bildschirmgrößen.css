@@ -1,0 +1,53 @@
+/*iphone Hochformat*/
+
+@media (min-width: 320px){
+    .map {
+        height: 220px;
+        width: auto;
+    }
+}
+
+/* iPhone Querformat */
+
+@media (min-width: 480px){
+    .map {
+        height: 150px;
+        width: auto;
+    }
+}
+
+/* kleines Tablet Querformat*/
+
+@media (min-width: 649px){
+    .map {
+        height: 440px;
+        width: auto;
+    }
+}
+
+/* iPad Hochformat */
+
+@media (min-width: 768px){
+    .map {
+        height: 775px;
+        width: auto;
+    }
+}
+
+/* iPad Querformat */
+
+@media (min-width: 1024px){
+    .map {
+        height: 515px;
+        width: auto;
+    }
+}
+
+/* Laptop */
+
+@media (min-width: 1200px){
+    .map {
+        height: 640px;
+        width: auto;
+    }
+}
